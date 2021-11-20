@@ -1,0 +1,31 @@
+.portfolio-section__buttons-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-section__button-item:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio-button {
+  @extend %portfolio-button;
+  background-color: #f5f4fa;
+  color: $titles-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $accent-blue-color;
+    color: $accent-text-color;
+    border: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.portfolio-button--active {
+  @extend %portfolio-button;
+  background-color: $accent-blue-color;
+  color: $accent-text-color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}

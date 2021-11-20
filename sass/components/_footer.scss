@@ -1,0 +1,15 @@
+.footer {
+  padding: 60px 0;
+  background-color: $accent-background-color;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__address-and-logo {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}

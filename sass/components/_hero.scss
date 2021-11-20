@@ -1,0 +1,39 @@
+.hero-section {
+  max-width: 1600px;
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: $accent-background-color;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(58, 48, 47, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-section__container {
+  width: 696px;
+  text-align: center;
+}
+
+.hero-section__title {
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $accent-text-color;
+}
+.hero-button {
+  @extend %button;
+  padding: 10px 32px;
+}
